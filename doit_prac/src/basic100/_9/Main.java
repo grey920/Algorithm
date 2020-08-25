@@ -1,5 +1,9 @@
 package basic100._9;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /*
 - 입력된 수의 각 자릿수 합을 구하시오
 - 1242  ⇒ 정답 : 9
@@ -8,8 +12,9 @@ package basic100._9;
 */
 public class Main {
 
-	public static void main(String[] args) {
-		int inputNum = 1242;
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int inputNum = Integer.parseInt(br.readLine());
 		int accSum = 0; // 각 자릿수의 합을 누적할 변수 생성
 		
 		// 1242			=> 124	=> 12	=> 1
