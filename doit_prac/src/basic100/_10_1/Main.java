@@ -13,7 +13,7 @@ package basic100._10_1;
 중첩 반복문(for 혹은 while)
 */
 public class Main {
-
+	// 겨운ver.
 	public static void main(String[] args) {
 		int inputNum = 4;
 		int accNum = 1;
