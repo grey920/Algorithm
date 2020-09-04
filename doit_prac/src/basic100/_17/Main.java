@@ -1,4 +1,9 @@
 package basic100._17;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /*
 ## 문제 소개
 
@@ -15,17 +20,20 @@ package basic100._17;
  */
 public class Main {
 
-	public static void main(String[] args) {
-		int n = 5;
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int n = Integer.parseInt(br.readLine());
+		int i = 0;
 		
-		for (int i=0; i < n; i++) {
-			for(int j=0; j < n; j++) {
+		while(i < n) {
+			for(int j = 0; j < n; j++) {
 				if(j < i) {
 					System.out.print(" ");
 				}else
-				System.out.print("*");
+			System.out.print("*");
 			}
 			System.out.println();
+			i++;
 		}
 	}
 
